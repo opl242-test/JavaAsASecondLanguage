@@ -21,7 +21,6 @@ ENTRYPOINT ["java","-jar","/cloud.jar"]
 ## 3. Build Docker image and push to project’s image repository
 ```
 git clone https://github.com/JavaAsASecondLanguage/JavaAsASecondLanguage.git
-git checkout lecture10
 cd cloud
 ```
 
