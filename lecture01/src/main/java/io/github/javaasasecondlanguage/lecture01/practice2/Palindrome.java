@@ -11,6 +11,21 @@ public class Palindrome {
      * @throws IllegalArgumentException if str is `null`
      */
     public static boolean isPalindrome(String str) {
-        throw new RuntimeException("Not implemented");
+        // throw new RuntimeException("Not implemented");
+        if (str == null) {
+            throw new IllegalArgumentException("str could not be null");
+        }
+
+        int n = str.length();
+
+        boolean flag = true;
+
+        for (int i = 0; i < n / 2; i++) {
+            if (str.charAt(i) != str.charAt(n - i - 1)) {
+                flag = false;
+            }
+        }
+        
+        return flag;
     }
 }
