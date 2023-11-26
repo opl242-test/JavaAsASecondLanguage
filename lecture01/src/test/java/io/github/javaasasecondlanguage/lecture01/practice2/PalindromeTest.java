@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Disabled
+// @Disabled
 class PalindromeTest {
     @Test
     void nullIsAnIlligalArgument() {
         assertThrows(
-                IllegalArgumentException.class,
-                () -> Palindrome.isPalindrome(null)
+            IllegalArgumentException.class,
+            () -> Palindrome.isPalindrome(null)
         );
     }
 

@@ -7,8 +7,8 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_14
-    targetCompatibility = JavaVersion.VERSION_14
+    sourceCompatibility = JavaVersion.VERSION_19
+    targetCompatibility = JavaVersion.VERSION_19
 }
 
 enableJavaPreviewFeatures()
@@ -29,8 +29,7 @@ checkstyle {
 
 tasks.withType<Checkstyle> {
     reports {
-        xml.isEnabled = false
-        html.isEnabled = true
+
     }
 }
 
